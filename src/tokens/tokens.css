@@ -1,0 +1,151 @@
+/* ============================================================
+   Boilerhaus Design System — Token Definitions
+   Canonical spec: ../boilerhaus-ops/CLAUDE.md
+
+   Architecture:
+   - @theme block  → Tailwind generates utility classes (bg-*, text-*, etc.)
+                     AND adds CSS custom properties to :root.
+   - :root block   → Pure CSS vars for tokens Tailwind doesn't cover well
+                     (motion, shadows, semantic aliases, spacing, grid).
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   TAILWIND THEME
+   Each entry generates:
+     • A CSS custom property on :root (so var() always works)
+     • Utility classes: bg-signal, text-void, font-display, etc.
+   ---------------------------------------------------------- */
+
+@theme {
+
+  /* Colors — bg-*, text-*, border-*, ring-*, fill-*, stroke-* */
+  --color-void:        #0C0C0C; /* Near-black — primary text, headers */
+  --color-paper:       #F7F5F0; /* Warm white — primary background */
+  --color-signal:      #D92B2B; /* Bauhaus red — primary accent, CTAs */
+  --color-signal-alt:  #1A52CC; /* Bauhaus blue — links, focus rings */
+  --color-rule:        #E2DED8; /* Warm grey — borders, dividers */
+  --color-smoke:       #6B6660; /* Mid grey — secondary text, captions */
+  --color-ash:         #2E2C2A; /* Dark grey — sidebar, code backgrounds */
+
+  /* Font families — font-display, font-body, font-mono */
+  --font-family-display: "Barlow Condensed", sans-serif;
+  --font-family-body:    "DM Sans", sans-serif;
+  --font-family-mono:    "JetBrains Mono", monospace;
+
+  /* Type scale (major third, 1.25 ratio) — text-xs … text-4xl */
+  /* Overrides Tailwind defaults to match Boilerhaus spec */
+  --font-size-xs:   0.64rem; /* ~10px — labels, metadata */
+  --font-size-sm:   0.80rem; /* ~13px — captions, helper text */
+  --font-size-base: 1.00rem; /*  16px — body */
+  --font-size-md:   1.25rem; /* ~20px — lead text */
+  --font-size-lg:   1.56rem; /* ~25px — card headings */
+  --font-size-xl:   1.95rem; /* ~31px — section headings */
+  --font-size-2xl:  2.44rem; /* ~39px — page headings */
+  --font-size-3xl:  3.05rem; /* ~49px — hero display */
+  --font-size-4xl:  3.81rem; /* ~61px — brand display */
+
+  /* Border radius — rounded-none, rounded-sm, rounded-md, rounded-lg, rounded-full */
+  --radius-none: 0px;
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   8px;
+  --radius-full: 9999px;
+
+  /* Transition durations — duration-fast, duration-base, duration-slow, duration-xslow */
+  --transition-duration-fast:  100ms; /* Hover states */
+  --transition-duration-base:  200ms; /* Standard transitions */
+  --transition-duration-slow:  350ms; /* Entrances, reveals */
+  --transition-duration-xslow: 500ms; /* Page transitions */
+
+}
+
+
+/* ----------------------------------------------------------
+   PURE CSS VARS
+   Tokens Tailwind doesn't generate utilities for.
+   All component CSS that can't use a utility class references these.
+   ---------------------------------------------------------- */
+
+:root {
+
+  /* Semantic color aliases — use these in component CSS over raw tokens */
+  --color-text-primary:   var(--color-void);
+  --color-text-secondary: var(--color-smoke);
+  --color-bg-primary:     var(--color-paper);
+  --color-bg-inverted:    var(--color-void);
+  --color-accent:         var(--color-signal);
+  --color-border:         var(--color-rule);
+
+  /* Font aliases — convenience for non-Tailwind CSS */
+  --font-display: var(--font-family-display);
+  --font-body:    var(--font-family-body);
+  --font-mono:    var(--font-family-mono);
+
+  /* Type scale aliases — var(--type-sm) etc. work in component CSS */
+  --type-xs:   var(--font-size-xs);
+  --type-sm:   var(--font-size-sm);
+  --type-base: var(--font-size-base);
+  --type-md:   var(--font-size-md);
+  --type-lg:   var(--font-size-lg);
+  --type-xl:   var(--font-size-xl);
+  --type-2xl:  var(--font-size-2xl);
+  --type-3xl:  var(--font-size-3xl);
+  --type-4xl:  var(--font-size-4xl);
+
+  /* Spacing — 8px base unit */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* Grid */
+  --grid-columns:   12;
+  --grid-gutter:    var(--space-5);
+  --grid-gutter-lg: var(--space-6);
+  --grid-max-width: 1280px;
+  --sidebar-width:  280px;
+
+  /* Borders */
+  --border-width: 1px;
+  --border-color: var(--color-rule);
+
+  /* Elevation — shadows use --color-void with low alpha */
+  --shadow-sm: 0 1px 2px rgba(12, 12, 12, 0.08);
+  --shadow-md: 0 2px 8px rgba(12, 12, 12, 0.10);
+  --shadow-lg: 0 8px 24px rgba(12, 12, 12, 0.12);
+  --shadow-xl: 0 16px 48px rgba(12, 12, 12, 0.16);
+
+  /* Motion easing — no bounce, no spring */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* General UI */
+  --ease-enter:    cubic-bezier(0, 0, 0.2, 1);    /* Entering */
+  --ease-exit:     cubic-bezier(0.4, 0, 1, 1);    /* Leaving */
+
+  /* Duration aliases — var(--duration-fast) etc. work in component CSS */
+  --duration-fast:  var(--transition-duration-fast);
+  --duration-base:  var(--transition-duration-base);
+  --duration-slow:  var(--transition-duration-slow);
+  --duration-xslow: var(--transition-duration-xslow);
+
+  /* Composed transition shorthands */
+  --transition-fast: var(--duration-fast) var(--ease-standard);
+  --transition-base: var(--duration-base) var(--ease-standard);
+  --transition-slow: var(--duration-slow) var(--ease-enter);
+
+  /* Heading style — for non-Tailwind CSS that sets heading styles */
+  --heading-font-family:    var(--font-display);
+  --heading-font-weight:    700;
+  --heading-letter-spacing: 0.04em;
+  --heading-text-transform: uppercase;
+
+  /* Body style */
+  --body-font-family:  var(--font-body);
+  --body-font-weight:  400;
+  --body-line-height:  1.65;
+
+}

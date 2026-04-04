@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//media/boilerrat/Bobby/boilerhaus-ops/**)",
+      "Bash(npm install:*)"
+    ]
+  }
+}

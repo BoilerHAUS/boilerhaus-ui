@@ -1,21 +1,33 @@
 import type { Preview } from '@storybook/react-vite'
 
+// Full CSS chain: Tailwind base → tokens (@theme + :root vars) → base styles
+import '../src/index.css'
+
 const preview: Preview = {
   parameters: {
+    layout: 'centered',
+
+    backgrounds: {
+      default: 'paper',
+      values: [
+        { name: 'paper', value: '#F7F5F0' }, // --color-paper
+        { name: 'void',  value: '#0C0C0C' }, // --color-void
+        { name: 'ash',   value: '#2E2C2A' }, // --color-ash
+        { name: 'white', value: '#ffffff' },
+      ],
+    },
+
     controls: {
       matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
+        color: /(background|color)$/i,
+        date:  /Date$/i,
       },
     },
 
     a11y: {
-      // 'todo' - show a11y violations in the test UI only
-      // 'error' - fail CI on a11y violations
-      // 'off' - skip a11y checks entirely
-      test: 'todo'
-    }
+      test: 'todo',
+    },
   },
-};
+}
 
-export default preview;
+export default preview
