@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Read(//media/boilerrat/Bobby/boilerhaus-ops/**)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }
