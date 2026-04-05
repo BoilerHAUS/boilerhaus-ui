@@ -137,5 +137,33 @@ export type { ProgressProps, ProgressSize, ProgressVariant } from './components/
 export { Stat } from './components/Stat'
 export type { StatProps, StatDeltaDirection } from './components/Stat'
 
+export { Avatar, AvatarGroup } from './components/Avatar'
+export type { AvatarProps, AvatarGroupProps, AvatarSize } from './components/Avatar'
+
+export { RadioGroup, Radio } from './components/RadioGroup'
+export type { RadioGroupProps, RadioProps } from './components/RadioGroup'
+
+export { Popover, PopoverTrigger, PopoverContent, PopoverClose, PopoverAnchor } from './components/Popover'
+export type { PopoverContentProps } from './components/Popover'
+
+export {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+  BreadcrumbEllipsis,
+} from './components/Breadcrumb'
+export type {
+  BreadcrumbProps,
+  BreadcrumbListProps,
+  BreadcrumbItemProps,
+  BreadcrumbLinkProps,
+  BreadcrumbPageProps,
+  BreadcrumbSeparatorProps,
+  BreadcrumbEllipsisProps,
+} from './components/Breadcrumb'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'

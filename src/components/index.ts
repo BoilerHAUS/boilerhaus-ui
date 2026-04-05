@@ -118,3 +118,31 @@ export type { ProgressProps, ProgressSize, ProgressVariant } from './Progress'
 
 export { Stat } from './Stat'
 export type { StatProps, StatDeltaDirection } from './Stat'
+
+export { Avatar, AvatarGroup } from './Avatar'
+export type { AvatarProps, AvatarGroupProps, AvatarSize } from './Avatar'
+
+export { RadioGroup, Radio } from './RadioGroup'
+export type { RadioGroupProps, RadioProps } from './RadioGroup'
+
+export { Popover, PopoverTrigger, PopoverContent, PopoverClose, PopoverAnchor } from './Popover'
+export type { PopoverContentProps } from './Popover'
+
+export {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+  BreadcrumbEllipsis,
+} from './Breadcrumb'
+export type {
+  BreadcrumbProps,
+  BreadcrumbListProps,
+  BreadcrumbItemProps,
+  BreadcrumbLinkProps,
+  BreadcrumbPageProps,
+  BreadcrumbSeparatorProps,
+  BreadcrumbEllipsisProps,
+} from './Breadcrumb'

@@ -136,3 +136,17 @@ hr {
   from { transform: scale(1);    opacity: 1; }
   to   { transform: scale(0.96); opacity: 0; }
 }
+
+/* ----------------------------------------------------------
+   Popover animations
+   ---------------------------------------------------------- */
+
+@keyframes popover-in {
+  from { transform: scale(0.97); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+@keyframes popover-out {
+  from { transform: scale(1);    opacity: 1; }
+  to   { transform: scale(0.97); opacity: 0; }
+}
