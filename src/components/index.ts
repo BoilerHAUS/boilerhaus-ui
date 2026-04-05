@@ -164,3 +164,6 @@ export type { FileUploadProps } from './FileUpload'
 
 export { DataTable } from './DataTable'
 export type { DataTableProps, DataTableColumn } from './DataTable'
+
+export { AspectRatio } from './AspectRatio'
+export type { AspectRatioProps } from './AspectRatio'

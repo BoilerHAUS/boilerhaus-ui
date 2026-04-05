@@ -183,5 +183,8 @@ export type { FileUploadProps } from './components/FileUpload'
 export { DataTable } from './components/DataTable'
 export type { DataTableProps, DataTableColumn } from './components/DataTable'
 
+export { AspectRatio } from './components/AspectRatio'
+export type { AspectRatioProps } from './components/AspectRatio'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'
