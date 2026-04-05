@@ -78,5 +78,20 @@ export type {
   TableCellProps,
 } from './components/Table'
 
+export { Textarea } from './components/Textarea'
+export type { TextareaProps } from './components/Textarea'
+
+export { Checkbox } from './components/Checkbox'
+export type { CheckboxProps } from './components/Checkbox'
+
+export { Switch } from './components/Switch'
+export type { SwitchProps } from './components/Switch'
+
+export { Alert } from './components/Alert'
+export type { AlertProps, AlertVariant } from './components/Alert'
+
+export { Toaster, toast, useToastStore } from './components/Toast'
+export type { ToasterProps, ToastItem, ToastVariant, ToastOptions } from './components/Toast'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'
