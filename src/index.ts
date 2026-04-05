@@ -50,5 +50,33 @@ export type {
   DialogFooterProps,
 } from './components/Dialog'
 
+export {
+  PageShell,
+  PageShellTopbar,
+  PageShellBody,
+  PageShellSidebar,
+  PageShellContent,
+  PageShellNavItem,
+} from './components/PageShell'
+export type {
+  PageShellProps,
+  PageShellTopbarProps,
+  PageShellBodyProps,
+  PageShellSidebarProps,
+  PageShellContentProps,
+  PageShellNavItemProps,
+} from './components/PageShell'
+
+export { Table, TableHeader, TableBody, TableFoot, TableRow, TableHead, TableCell } from './components/Table'
+export type {
+  TableProps,
+  TableHeaderProps,
+  TableBodyProps,
+  TableFootProps,
+  TableRowProps,
+  TableHeadProps,
+  TableCellProps,
+} from './components/Table'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'

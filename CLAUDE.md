@@ -148,6 +148,11 @@ Semantic aliases: `--color-text-primary`, `--color-text-secondary`, `--color-bg-
 
 Status aliases: `--color-status-neutral`, `--color-status-active`, `--color-status-warning`, `--color-status-danger`, `--color-status-success`
 
+### Layout
+
+`--topbar-height` (48px) — app shell topbar height, use for sticky offset calculations
+`--sidebar-width` (280px) — app shell sidebar width
+
 ### Type Scale (major third, 1.25 ratio)
 
 `--type-xs` (0.64rem) → `--type-sm` (0.80rem) → `--type-base` (1rem) → `--type-md` → `--type-lg` → `--type-xl` → `--type-2xl` → `--type-3xl` → `--type-4xl` (3.81rem)

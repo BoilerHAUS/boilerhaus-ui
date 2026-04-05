@@ -31,3 +31,31 @@ export type {
   DialogDescriptionProps,
   DialogFooterProps,
 } from './Dialog'
+
+export {
+  PageShell,
+  PageShellTopbar,
+  PageShellBody,
+  PageShellSidebar,
+  PageShellContent,
+  PageShellNavItem,
+} from './PageShell'
+export type {
+  PageShellProps,
+  PageShellTopbarProps,
+  PageShellBodyProps,
+  PageShellSidebarProps,
+  PageShellContentProps,
+  PageShellNavItemProps,
+} from './PageShell'
+
+export { Table, TableHeader, TableBody, TableFoot, TableRow, TableHead, TableCell } from './Table'
+export type {
+  TableProps,
+  TableHeaderProps,
+  TableBodyProps,
+  TableFootProps,
+  TableRowProps,
+  TableHeadProps,
+  TableCellProps,
+} from './Table'

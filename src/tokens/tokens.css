@@ -113,12 +113,15 @@
   --space-9:  96px;
   --space-10: 128px;
 
+  /* Layout */
+  --topbar-height:  48px;  /* App shell topbar height — use for sticky offset calculations */
+  --sidebar-width:  280px;
+
   /* Grid */
   --grid-columns:   12;
   --grid-gutter:    var(--space-5);
   --grid-gutter-lg: var(--space-6);
   --grid-max-width: 1280px;
-  --sidebar-width:  280px;
 
   /* Borders */
   --border-width: 1px;
