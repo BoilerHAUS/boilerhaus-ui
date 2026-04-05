@@ -87,7 +87,7 @@ export interface ToasterProps {
  * <Toaster />
  *
  * // Anywhere in your app:
- * import { toast } from 'boilerhaus-ui'
+ * import { toast } from '@boilerhaus-ui/boilerhaus-ui'
  * toast.success({ title: 'Saved', description: 'Project details updated.' })
  */
 export function Toaster({ offset = 16 }: ToasterProps) {

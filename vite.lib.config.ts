@@ -1,5 +1,5 @@
 /**
- * Library build config — outputs boilerhaus-ui as an installable package.
+ * Library build config — outputs @boilerhaus-ui/boilerhaus-ui as an installable package.
  *
  * Produces:
  *   dist/index.js      — ESM bundle
@@ -9,7 +9,7 @@
  *
  * Does NOT include the Tailwind plugin — components ship as class-name strings.
  * Consumers run Tailwind in their own app and add:
- *   @source "../node_modules/boilerhaus-ui/dist";
+ *   @source "../node_modules/@boilerhaus-ui/boilerhaus-ui/dist";
  */
 
 import { defineConfig } from 'vite'
