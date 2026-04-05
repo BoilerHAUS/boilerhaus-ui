@@ -125,5 +125,17 @@ export type {
 export { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from './components/Tooltip'
 export type { TooltipProviderProps, TooltipContentProps } from './components/Tooltip'
 
+export { Spinner } from './components/Spinner'
+export type { SpinnerProps, SpinnerSize } from './components/Spinner'
+
+export { Skeleton } from './components/Skeleton'
+export type { SkeletonProps } from './components/Skeleton'
+
+export { Progress } from './components/Progress'
+export type { ProgressProps, ProgressSize, ProgressVariant } from './components/Progress'
+
+export { Stat } from './components/Stat'
+export type { StatProps, StatDeltaDirection } from './components/Stat'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'
