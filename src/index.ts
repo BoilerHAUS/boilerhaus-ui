@@ -28,5 +28,27 @@ export type { LabelProps } from './components/Label'
 export { Input } from './components/Input'
 export type { InputProps } from './components/Input'
 
+export { Card, CardHeader, CardBody, CardFooter } from './components/Card'
+export type { CardProps, CardHeaderProps, CardBodyProps, CardFooterProps } from './components/Card'
+
+export { Select, SelectItem } from './components/Select'
+export type { SelectProps, SelectItemProps } from './components/Select'
+
+export {
+  Dialog,
+  DialogTrigger,
+  DialogClose,
+  DialogContent,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from './components/Dialog'
+export type {
+  DialogContentProps,
+  DialogTitleProps,
+  DialogDescriptionProps,
+  DialogFooterProps,
+} from './components/Dialog'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'
