@@ -146,3 +146,12 @@ export type {
   BreadcrumbSeparatorProps,
   BreadcrumbEllipsisProps,
 } from './Breadcrumb'
+
+export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './Accordion'
+export type { AccordionItemProps, AccordionTriggerProps, AccordionContentProps } from './Accordion'
+
+export { Stepper } from './Stepper'
+export type { StepperProps, Step, StepState, StepperOrientation } from './Stepper'
+
+export { Combobox } from './Combobox'
+export type { ComboboxProps, ComboboxOption } from './Combobox'

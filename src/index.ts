@@ -165,5 +165,14 @@ export type {
   BreadcrumbEllipsisProps,
 } from './components/Breadcrumb'
 
+export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './components/Accordion'
+export type { AccordionItemProps, AccordionTriggerProps, AccordionContentProps } from './components/Accordion'
+
+export { Stepper } from './components/Stepper'
+export type { StepperProps, Step, StepState, StepperOrientation } from './components/Stepper'
+
+export { Combobox } from './components/Combobox'
+export type { ComboboxProps, ComboboxOption } from './components/Combobox'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'

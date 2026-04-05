@@ -150,3 +150,18 @@ hr {
   from { transform: scale(1);    opacity: 1; }
   to   { transform: scale(0.97); opacity: 0; }
 }
+
+/* ----------------------------------------------------------
+   Accordion animations
+   Uses --radix-accordion-content-height injected by Radix.
+   ---------------------------------------------------------- */
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to   { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to   { height: 0; }
+}
