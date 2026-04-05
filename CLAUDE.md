@@ -141,8 +141,12 @@ boilerhaus-ui/
 | `--color-rule` | `#E2DED8` | Borders, dividers |
 | `--color-smoke` | `#6B6660` | Secondary text, captions |
 | `--color-ash` | `#2E2C2A` | Dark sidebar, code backgrounds |
+| `--color-caution` | `#9A6F00` | Bauhaus amber, warning states |
+| `--color-growth` | `#1B6B3A` | Forest green, success/completion |
 
 Semantic aliases: `--color-text-primary`, `--color-text-secondary`, `--color-bg-primary`, `--color-bg-inverted`, `--color-accent`, `--color-border`
+
+Status aliases: `--color-status-neutral`, `--color-status-active`, `--color-status-warning`, `--color-status-danger`, `--color-status-success`
 
 ### Type Scale (major third, 1.25 ratio)
 

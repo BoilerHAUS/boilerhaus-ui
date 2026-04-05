@@ -26,6 +26,8 @@
   --color-rule:        #E2DED8; /* Warm grey — borders, dividers */
   --color-smoke:       #6B6660; /* Mid grey — secondary text, captions */
   --color-ash:         #2E2C2A; /* Dark grey — sidebar, code backgrounds */
+  --color-caution:     #9A6F00; /* Bauhaus amber — warning, attention states */
+  --color-growth:      #1B6B3A; /* Forest green — success, completion states */
 
   /* Font families — font-display, font-body, font-mono */
   --font-family-display: "Barlow Condensed", sans-serif;
@@ -75,6 +77,13 @@
   --color-bg-inverted:    var(--color-void);
   --color-accent:         var(--color-signal);
   --color-border:         var(--color-rule);
+
+  /* Status aliases — semantic names for badge/state indicators */
+  --color-status-neutral: var(--color-smoke);
+  --color-status-active:  var(--color-signal-alt);
+  --color-status-warning: var(--color-caution);
+  --color-status-danger:  var(--color-signal);
+  --color-status-success: var(--color-growth);
 
   /* Font aliases — convenience for non-Tailwind CSS */
   --font-display: var(--font-family-display);

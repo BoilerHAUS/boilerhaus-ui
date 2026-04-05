@@ -4,7 +4,9 @@
       "Read(//media/boilerrat/Bobby/boilerhaus-ops/**)",
       "Bash(npm install:*)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(npx tsc:*)",
+      "Bash(ls dist/*.d.ts dist/components/ dist/tokens.css)"
     ]
   }
 }
