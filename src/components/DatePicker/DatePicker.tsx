@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import * as PopoverPrimitive from '@radix-ui/react-popover'
 import { cn } from '../../lib/cn'
 

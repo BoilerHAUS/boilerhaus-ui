@@ -17,10 +17,16 @@
   "files": [
     "dist"
   ],
+  "sideEffects": [
+    "./dist/tokens.css"
+  ],
+  "keywords": ["design-system", "react", "tailwind", "components", "ui"],
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build:lib": "vite build --config vite.lib.config.ts && tsc -p tsconfig.lib.json",
+    "prepublishOnly": "npm run build:lib",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",

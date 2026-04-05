@@ -74,7 +74,7 @@ toast.dismiss = function (id?: string) {
     dispatch({ type: 'REMOVE', id })
   } else {
     // dismiss all — clone array before iterating so listeners don't mutate mid-loop
-    listeners.forEach(fn => {
+    listeners.forEach(() => {
       // We can't read state here directly — this is a best-effort clear
     })
     dispatch({ type: 'REMOVE', id: '__all__' })
