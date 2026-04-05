@@ -174,5 +174,14 @@ export type { StepperProps, Step, StepState, StepperOrientation } from './compon
 export { Combobox } from './components/Combobox'
 export type { ComboboxProps, ComboboxOption } from './components/Combobox'
 
+export { DatePicker } from './components/DatePicker'
+export type { DatePickerProps } from './components/DatePicker'
+
+export { FileUpload } from './components/FileUpload'
+export type { FileUploadProps } from './components/FileUpload'
+
+export { DataTable } from './components/DataTable'
+export type { DataTableProps, DataTableColumn } from './components/DataTable'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'

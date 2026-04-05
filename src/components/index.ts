@@ -155,3 +155,12 @@ export type { StepperProps, Step, StepState, StepperOrientation } from './Steppe
 
 export { Combobox } from './Combobox'
 export type { ComboboxProps, ComboboxOption } from './Combobox'
+
+export { DatePicker } from './DatePicker'
+export type { DatePickerProps } from './DatePicker'
+
+export { FileUpload } from './FileUpload'
+export type { FileUploadProps } from './FileUpload'
+
+export { DataTable } from './DataTable'
+export type { DataTableProps, DataTableColumn } from './DataTable'
