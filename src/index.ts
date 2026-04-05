@@ -93,5 +93,37 @@ export type { AlertProps, AlertVariant } from './components/Alert'
 export { Toaster, toast, useToastStore } from './components/Toast'
 export type { ToasterProps, ToastItem, ToastVariant, ToastOptions } from './components/Toast'
 
+export { Tabs, TabsList, TabsTrigger, TabsContent } from './components/Tabs'
+export type { TabsListProps, TabsTriggerProps } from './components/Tabs'
+
+export {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuCheckboxItem,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuGroup,
+  DropdownMenuSub,
+  DropdownMenuSubTrigger,
+  DropdownMenuSubContent,
+} from './components/DropdownMenu'
+export type {
+  DropdownMenuContentProps,
+  DropdownMenuItemProps,
+  DropdownMenuCheckboxItemProps,
+  DropdownMenuRadioItemProps,
+  DropdownMenuLabelProps,
+  DropdownMenuSeparatorProps,
+  DropdownMenuSubTriggerProps,
+  DropdownMenuSubContentProps,
+} from './components/DropdownMenu'
+
+export { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from './components/Tooltip'
+export type { TooltipProviderProps, TooltipContentProps } from './components/Tooltip'
+
 // Utilities — exported so consumers can use cn() with the same merge logic
 export { cn } from './lib/cn'

@@ -108,3 +108,31 @@ hr {
   from { transform: translateX(0);                 opacity: 1; }
   to   { transform: translateX(calc(100% + 16px)); opacity: 0; }
 }
+
+/* ----------------------------------------------------------
+   Dropdown animations
+   ---------------------------------------------------------- */
+
+@keyframes dropdown-in {
+  from { transform: scaleY(0.95); opacity: 0; transform-origin: top; }
+  to   { transform: scaleY(1);    opacity: 1; transform-origin: top; }
+}
+
+@keyframes dropdown-out {
+  from { transform: scaleY(1);    opacity: 1; transform-origin: top; }
+  to   { transform: scaleY(0.95); opacity: 0; transform-origin: top; }
+}
+
+/* ----------------------------------------------------------
+   Tooltip animations
+   ---------------------------------------------------------- */
+
+@keyframes tooltip-in {
+  from { transform: scale(0.96); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+@keyframes tooltip-out {
+  from { transform: scale(1);    opacity: 1; }
+  to   { transform: scale(0.96); opacity: 0; }
+}
