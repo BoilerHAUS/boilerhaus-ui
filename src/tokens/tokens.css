@@ -161,3 +161,37 @@
   --body-line-height:  1.65;
 
 }
+
+
+/* ----------------------------------------------------------
+   DARK MODE OVERRIDES
+   Applied when <html data-theme="dark"> is set.
+   Remaps the base color tokens so all Tailwind utilities
+   (bg-paper, text-void, border-rule, etc.) adapt automatically.
+   Accent colours (signal, signal-alt, caution, growth) are
+   unchanged — they're brand identity and work on both surfaces.
+   ---------------------------------------------------------- */
+
+[data-theme="dark"] {
+
+  /* Remap surface/text tokens */
+  --color-paper: #1A1917;   /* Dark warm surface — replaces warm white */
+  --color-void:  #F0EDE8;   /* Light warm text  — replaces near-black  */
+  --color-rule:  #38352E;   /* Darker dividers */
+  --color-smoke: #9A9490;   /* Lighter secondary text on dark bg */
+  --color-ash:   #111110;   /* Even darker sidebar/code bg */
+
+  /* Semantic aliases — keep consistent with remapped base tokens */
+  --color-text-primary:   #F0EDE8;
+  --color-text-secondary: #9A9490;
+  --color-bg-primary:     #1A1917;
+  --color-bg-inverted:    #F0EDE8;
+  --color-border:         #38352E;
+
+  /* Shadows — deeper alpha on dark surfaces */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.40);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.56);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.72);
+
+}

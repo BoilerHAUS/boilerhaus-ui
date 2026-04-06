@@ -170,3 +170,6 @@ export type { AspectRatioProps } from './AspectRatio'
 
 export { Logo } from './Logo'
 export type { LogoProps, LogoVariant, LogoLockup, LogoSize } from './Logo'
+
+export { ThemeToggle, useTheme } from './ThemeToggle'
+export type { ThemeToggleProps, Theme } from './ThemeToggle'
