@@ -167,3 +167,6 @@ export type { DataTableProps, DataTableColumn } from './DataTable'
 
 export { AspectRatio } from './AspectRatio'
 export type { AspectRatioProps } from './AspectRatio'
+
+export { Logo } from './Logo'
+export type { LogoProps, LogoVariant, LogoLockup, LogoSize } from './Logo'

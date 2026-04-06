@@ -6,7 +6,31 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:github.com)",
       "Bash(npx tsc:*)",
-      "Bash(ls dist/*.d.ts dist/components/ dist/tokens.css)"
+      "Bash(ls dist/*.d.ts dist/components/ dist/tokens.css)",
+      "Bash(infsh app run falai/flux-dev-lora --input '{:*)",
+      "Bash(infsh whoami:*)",
+      "Bash(infsh status:*)",
+      "Bash(infsh auth:*)",
+      "Bash(infsh --help)",
+      "Bash(infsh me:*)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/lddcqwwt.jpeg\" -o /tmp/boilerhaus-mark-1.jpeg)",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/3pbdyyv3.jpeg\" -o /tmp/scopehouse-mark-1.jpeg)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/1mhkfln8.jpeg\" -o /tmp/boilerhaus-monogram-1.jpeg)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/ujjbppxu.jpeg\" -o /tmp/bh-refine-b.jpeg)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/7x7na3ve.jpeg\" -o /tmp/bh-refine-a.jpeg)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/iwmd664t.jpeg\" -o /tmp/bh-refine-c.jpeg)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/sovz3vvr.jpeg\" -o /tmp/bh-refine-d.jpeg)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/6xuw83k4.jpeg\" -o /tmp/bh-refine-f.jpeg)",
+      "Bash(curl -s \"https://cloud.inference.sh/app/files/t/0s09cjpr/mj2k3i9g.jpeg\" -o /tmp/bh-refine-e.jpeg)",
+      "Bash(xdg-open /tmp/boilerhaus-wordmark.html)",
+      "mcp__claude_ai_Figma__get_design_context",
+      "mcp__claude_ai_Figma__get_metadata",
+      "mcp__claude_ai_Figma__use_figma",
+      "Read(//home/boilerrat/.claude/skills/**)"
+    ],
+    "additionalDirectories": [
+      "/tmp"
     ]
   }
 }
