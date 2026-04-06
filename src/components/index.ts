@@ -171,5 +171,8 @@ export type { AspectRatioProps } from './AspectRatio'
 export { Logo } from './Logo'
 export type { LogoProps, LogoVariant, LogoLockup, LogoSize } from './Logo'
 
+export { ScopehouseLogo } from './ScopehouseLogo'
+export type { ScopeLogoProps, ScopeLogoVariant, ScopeLogoLockup, ScopeLogoSize } from './ScopehouseLogo'
+
 export { ThemeToggle, useTheme } from './ThemeToggle'
 export type { ThemeToggleProps, Theme } from './ThemeToggle'
