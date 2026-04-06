@@ -46,6 +46,13 @@ export default defineConfig({
     rollupOptions: {
       // React must be provided by the consumer — never bundle it.
       external: ['react', 'react-dom', 'react/jsx-runtime'],
+      output: {
+        globals: {
+          'react': 'React',
+          'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'ReactJsxRuntime',
+        },
+      },
     },
     // Inline transitive deps (Radix Slot, clsx, tailwind-merge) — all small,
     // avoids requiring consumers to install them separately.
