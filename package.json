@@ -1,6 +1,6 @@
 {
   "name": "@boilerhaus-ui/boilerhaus-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Boilerhaus design system — Bauhaus-inspired tokens and components for ScopeHouse and beyond.",
   "type": "module",
   "exports": {
@@ -20,7 +20,13 @@
   "sideEffects": [
     "./dist/tokens.css"
   ],
-  "keywords": ["design-system", "react", "tailwind", "components", "ui"],
+  "keywords": [
+    "design-system",
+    "react",
+    "tailwind",
+    "components",
+    "ui"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
