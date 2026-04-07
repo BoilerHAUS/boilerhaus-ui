@@ -176,3 +176,16 @@ export type { ScopeLogoProps, ScopeLogoVariant, ScopeLogoLockup, ScopeLogoSize }
 
 export { ThemeToggle, useTheme } from './ThemeToggle'
 export type { ThemeToggleProps, Theme } from './ThemeToggle'
+
+// Layout primitives
+export { Stack } from './Stack'
+export type { StackProps, SpaceToken } from './Stack'
+
+export { Grid, GridCol } from './Grid'
+export type { GridProps, GridColProps, GridCols, GridColSpan } from './Grid'
+
+export { Container } from './Container'
+export type { ContainerProps, ContainerSize } from './Container'
+
+export { FormGroup, FormSection } from './FormGroup'
+export type { FormGroupProps, FormSectionProps } from './FormGroup'
