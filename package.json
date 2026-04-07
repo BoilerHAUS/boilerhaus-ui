@@ -1,6 +1,6 @@
 {
   "name": "@boilerhaus-ui/boilerhaus-ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Boilerhaus design system — Bauhaus-inspired tokens and components for ScopeHouse and beyond.",
   "type": "module",
   "exports": {
